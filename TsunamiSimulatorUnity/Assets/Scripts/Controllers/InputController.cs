@@ -7,6 +7,7 @@ public class InputController : Singleton<InputController>
     public static float moveValueX;
     public static float moveValueY;
     public static float exitValue;
+    public static float moveTreshold = 0.25f;
 
     // Use this for initialization
     void Start()
@@ -38,8 +39,9 @@ public class InputController : Singleton<InputController>
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            moveValueX = Input.GetAxis("Horizontal");
-            moveValueY = Input.GetAxis("Vertical");
+            moveValueX = Input.GetAxis("Horizontal") > moveTreshold ? 1 : Input.GetAxis("Horizontal") < moveTreshold ? -1 : 0;
+            moveValueY = Input.GetAxis("Vertical") > moveTreshold ? 1 : Input.GetAxis("Vertical") < moveTreshold  ? -1 : 0;
+            //Debug.Log(moveValueX + " " + moveValueY);
         }
     }
 }
