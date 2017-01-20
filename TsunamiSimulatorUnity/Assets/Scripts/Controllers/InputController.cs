@@ -4,9 +4,8 @@ using System.Collections;
 public class InputController : Singleton<InputController>
 {
 
-    public static float moveValue;
-    public static float jumpValue;
-    public static float slamValue;
+    public static float moveValueX;
+    public static float moveValueY;
     public static float exitValue;
 
     // Use this for initialization
@@ -34,15 +33,13 @@ public class InputController : Singleton<InputController>
             exitValue = 1;
         }
 
-        moveValue = 0;
-        jumpValue = 0;
-        slamValue = 0;
+        moveValueX = 0;
+        moveValueY = 0;
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            moveValue = Input.GetAxis("Horizontal");
-            if (Input.GetAxis("Jump") > 0) jumpValue = 1;
-            if (Input.GetAxis("Slam") > 0) slamValue = 1;
+            moveValueX = Input.GetAxis("Horizontal");
+            moveValueY = Input.GetAxis("Vertical");
         }
     }
 }
