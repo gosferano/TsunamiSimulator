@@ -41,7 +41,6 @@ public class InputController : Singleton<InputController>
         {
             moveValueX = Input.GetAxis("Horizontal") > moveTreshold ? 1 : Input.GetAxis("Horizontal") < -moveTreshold ? -1 : 0;
             moveValueY = Input.GetAxis("Vertical") > moveTreshold ? 1 : Input.GetAxis("Vertical") < -moveTreshold  ? -1 : 0;
-            Debug.Log(moveValueX + " " + moveValueY);
         }
     }
 }
