@@ -121,7 +121,7 @@ public partial class Player : MonoBehaviour {
             canTurnDown = street.turnDown;
         }
 
-        if (collision.gameObject.tag == "Environment")
+        else if (collision.gameObject.tag == "Environment")
         {
             Environment env = collision.gameObject.GetComponent<Environment>();
             ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
@@ -129,6 +129,14 @@ public partial class Player : MonoBehaviour {
             if (damage >= maxDamage) lives++;
             //Destroy(collision.gameObject);
             collision.transform.Rotate(new Vector3(0,0,-90));
+        }
+
+        else if (collision.gameObject.tag == "Pickup")
+        {
+            Pickup pickup = collision.gameObject.GetComponent<Pickup>();
+            health += pickup.points;
+            health = health > maxHealth ? maxHealth : health;
+            Destroy(collision.gameObject);
         }
     }
 
