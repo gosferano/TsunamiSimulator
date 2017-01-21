@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public partial class Player : MonoBehaviour {
@@ -10,9 +11,27 @@ public partial class Player : MonoBehaviour {
     public bool canTurnLeft;
     public bool canTurnRight;
 
+    public bool lastPressedHorizontalRight;
+    public bool lastPressedVerticalDown;
+    public bool lastPressedHorizontal;
+
+    public enum Directions
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+    public List<Directions> directions;
+
 	// Use this for initialization
 	void Start () {
         movementVector = new Vector3(velocity, 0, 0);
+        directions.Add(Directions.Up);
+        directions.Add(Directions.Down);
+        directions.Add(Directions.Left);
+        directions.Add(Directions.Right);
         gameObject.tag = "Street";
 	}
 	
@@ -24,20 +43,44 @@ public partial class Player : MonoBehaviour {
 
     void Input()
     {
-        if (movementVector.x != 0 && InputController.moveValueY != 0)
+        if (InputController.moveValueY > 0)
         {
-            if ((InputController.moveValueY > 0 && canTurnUp) || (InputController.moveValueY < 0 && canTurnDown))
-            {
-                movementVector = new Vector3(0, InputController.moveValueY * velocity, 0);
-                transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
-            }
+            directions.Remove(Directions.Up);
+            directions.Add(Directions.Up);
         }
-        else if (movementVector.y != 0 && InputController.moveValueX != 0 && (canTurnLeft || canTurnRight))
+        else if (InputController.moveValueY < 0)
         {
-            if ((InputController.moveValueX > 0 && canTurnRight) || (InputController.moveValueX < 0 && canTurnLeft))
+            directions.Remove(Directions.Down);
+            directions.Add(Directions.Down);
+        }
+        else if (InputController.moveValueX > 0)
+        {
+            directions.Remove(Directions.Right);
+            directions.Add(Directions.Right);
+        }
+        else if (InputController.moveValueX < 0)
+        {
+            directions.Remove(Directions.Left);
+            directions.Add(Directions.Left);
+        }
+
+        foreach (Directions dir in directions.Select(x => x).Reverse())
+        {
+            if (movementVector.x != 0 && InputController.moveValueY != 0)
             {
-                movementVector = new Vector3(InputController.moveValueX * velocity, 0, 0);
-                transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), transform.position.z);
+                if ((InputController.moveValueY > 0 && canTurnUp) || (InputController.moveValueY < 0 && canTurnDown))
+                {
+                    movementVector = new Vector3(0, InputController.moveValueY * velocity, 0);
+                    transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
+                }
+            }
+            else if (movementVector.y != 0 && InputController.moveValueX != 0 && (canTurnLeft || canTurnRight))
+            {
+                if ((InputController.moveValueX > 0 && canTurnRight) || (InputController.moveValueX < 0 && canTurnLeft))
+                {
+                    movementVector = new Vector3(InputController.moveValueX * velocity, 0, 0);
+                    transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), transform.position.z);
+                }
             }
         }
     }
