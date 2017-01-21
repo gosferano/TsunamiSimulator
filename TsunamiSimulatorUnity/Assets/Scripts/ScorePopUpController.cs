@@ -10,7 +10,6 @@ public class ScorePopUpController : MonoBehaviour
     public static void Initialize()
     {
         canvas = GameObject.Find("Canvas");
-        popupText = Resources.Load<ScorePopUp>("ScorePopUpParent");
     }
 
     public static void CreateFloatingText(string text, Transform location)
