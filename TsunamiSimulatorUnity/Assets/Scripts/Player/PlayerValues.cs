@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public partial class Player {
-    public static float velocity = 1;
+    public static float velocity = 0.1f;
 }

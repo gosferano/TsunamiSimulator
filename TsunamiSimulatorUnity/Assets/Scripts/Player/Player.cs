@@ -34,4 +34,13 @@ public partial class Player : MonoBehaviour {
     {
         transform.position += movementVector;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Environment")
+        {
+            ScorePopUpController.CreateFloatingText(100.ToString(), other.transform);
+        }
+        Destroy(other.gameObject);
+    }
 }
