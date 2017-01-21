@@ -75,13 +75,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManager.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\AudioController.cs" />
+=======
+    <Compile Include="Assets\Scripts\Controllers\AudioController.cs" />
+>>>>>>> f37f52b0c9b7762ba6a7377baeaf8a76f1af85e3
+    <Compile Include="Assets\Scripts\Controllers\HudController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
+    <Compile Include="Assets\Scripts\Environment.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerValues.cs" />
     <Compile Include="Assets\Scripts\ScorePopUp.cs" />
     <Compile Include="Assets\Scripts\ScorePopUpController.cs" />
     <Compile Include="Assets\Scripts\Street.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthController.cs" />
+    <Compile Include="Assets\Scripts\Utility\EditorFlags.cs" />
     <Compile Include="Assets\Scripts\Utility\FpsDisplay.cs" />
     <Compile Include="Assets\Scripts\Utility\KeepOnLoad.cs" />
     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
