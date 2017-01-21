@@ -13,6 +13,7 @@ public partial class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         movementVector = new Vector3(velocity, 0, 0);
+        gameObject.tag = "Street";
 	}
 	
 	// Update is called once per frame
