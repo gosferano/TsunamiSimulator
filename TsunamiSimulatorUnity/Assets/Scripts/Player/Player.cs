@@ -119,7 +119,8 @@ public partial class Player : MonoBehaviour {
         if (collision.gameObject.tag == "Environment")
         {
             ScorePopUpController.CreateFloatingText(100.ToString(), collision.transform);
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            collision.transform.Rotate(new Vector3(0,0,-90));
         }
     }
 
