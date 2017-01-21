@@ -63,7 +63,6 @@ public partial class Player : MonoBehaviour {
 
         foreach (Directions dir in directions.Select(x => x).Reverse())
         {
-            Debug.Log(dir);
             if (movementVector.y >= 0 && dir == Directions.Up && canTurnUp && !moved)
             {
                 movementVector = new Vector3(0, Mathf.Sign((int)dir) * velocity, 0);
@@ -115,8 +114,8 @@ public partial class Player : MonoBehaviour {
         if (collision.gameObject.tag == "Environment")
         {
             ScorePopUpController.CreateFloatingText(100.ToString(), collision.transform);
+            Destroy(collision.gameObject);
         }
-        Destroy(collision.gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
