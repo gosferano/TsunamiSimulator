@@ -127,8 +127,7 @@ public partial class Player : MonoBehaviour {
             ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
             if (damage >= maxDamage) lives++;
-            //Destroy(collision.gameObject);
-            collision.transform.Rotate(new Vector3(0,0,-90));
+            Destroy(collision.gameObject);
         }
 
         else if (collision.gameObject.tag == "Pickup")
