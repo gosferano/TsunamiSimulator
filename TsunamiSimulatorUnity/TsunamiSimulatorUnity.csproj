@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -67,6 +70,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -75,10 +81,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerValues.cs" />
+    <Compile Include="Assets\Scripts\ScorePopUp.cs" />
+    <Compile Include="Assets\Scripts\ScorePopUpController.cs" />
     <Compile Include="Assets\Scripts\Street.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthController.cs" />
+    <Compile Include="Assets\Scripts\Utility\EditorFlags.cs" />
     <Compile Include="Assets\Scripts\Utility\FpsDisplay.cs" />
     <Compile Include="Assets\Scripts\Utility\KeepOnLoad.cs" />
     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
