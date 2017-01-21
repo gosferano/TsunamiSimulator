@@ -101,6 +101,12 @@ public partial class Player : MonoBehaviour {
             canTurnLeft = street.turnLeft;
             canTurnDown = street.turnDown;
         }
+
+        if (collision.gameObject.tag == "Environment")
+        {
+            ScorePopUpController.CreateFloatingText(100.ToString(), collision.transform);
+        }
+        Destroy(collision.gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -112,14 +118,5 @@ public partial class Player : MonoBehaviour {
             canTurnLeft = false;
             canTurnRight = false;
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Environment")
-        {
-            ScorePopUpController.CreateFloatingText(100.ToString(), other.transform);
-        }
-        Destroy(other.gameObject);
     }
 }
