@@ -20,7 +20,7 @@ public class AudioController : MonoBehaviour
     private AudioSource audioSource;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         audioSource = FindObjectOfType<AudioSource>();
         StartCoroutine(SoundOut(MaleScream_01, MaleScream_01_timer));
@@ -30,13 +30,12 @@ public class AudioController : MonoBehaviour
 
     IEnumerator SoundOut(AudioClip clip, int timer)
     {
-        
+
         StartCoroutine(Halt(timer));
 
         while (keepPlaying)
         {
             int offset = (int)Random.Range(timer * 0.5f, timer * 1.5f);
-            Debug.Log("Offset = " + offset);
             audioSource.PlayOneShot(clip);
             yield return new WaitForSeconds(offset);
         }
