@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -124,9 +125,14 @@ public partial class Player : MonoBehaviour {
         else if (collision.gameObject.tag == "Environment")
         {
             Environment env = collision.gameObject.GetComponent<Environment>();
+            Debug.Log("Environment trigger");
             ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
-            if (damage >= maxDamage) lives++;
+            if (damage >= maxDamage)
+            {
+                lives++;
+                damage = 0;
+            }
             Destroy(collision.gameObject);
         }
 
