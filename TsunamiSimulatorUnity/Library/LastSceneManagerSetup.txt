@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Game (Mindaugas).unity
+- path: Assets/Scenes/Gytis.unity
   isLoaded: 1
   isActive: 1
