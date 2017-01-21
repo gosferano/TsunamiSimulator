@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class Environment : MonoBehaviour {
+
+    public float points;
 
 	// Use this for initialization
 	void Start () {
-		ScorePopUpController.Initialize();
+		
 	}
 	
 	// Update is called once per frame
