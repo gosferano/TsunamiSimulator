@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerValues.cs" />
     <Compile Include="Assets\Scripts\Street.cs" />
+    <Compile Include="Assets\Scripts\Utility\EditorFlags.cs" />
     <Compile Include="Assets\Scripts\Utility\FpsDisplay.cs" />
     <Compile Include="Assets\Scripts\Utility\KeepOnLoad.cs" />
     <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
