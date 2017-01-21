@@ -10,17 +10,14 @@ public partial class Player : MonoBehaviour {
     public bool canTurnDown;
     public bool canTurnLeft;
     public bool canTurnRight;
-
-    public bool lastPressedHorizontalRight;
-    public bool lastPressedVerticalDown;
-    public bool lastPressedHorizontal;
+    public bool moved;
 
     public enum Directions
     {
-        Up,
-        Down,
-        Left,
-        Right
+        Up = 1,
+        Right = 2,
+        Left = -2,
+        Down = -1
     }
 
     public List<Directions> directions;
@@ -66,21 +63,34 @@ public partial class Player : MonoBehaviour {
 
         foreach (Directions dir in directions.Select(x => x).Reverse())
         {
-            if (movementVector.x != 0 && InputController.moveValueY != 0)
+            Debug.Log(dir);
+            if (movementVector.y >= 0 && dir == Directions.Up && canTurnUp && !moved)
             {
-                if ((InputController.moveValueY > 0 && canTurnUp) || (InputController.moveValueY < 0 && canTurnDown))
-                {
-                    movementVector = new Vector3(0, InputController.moveValueY * velocity, 0);
-                    transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
-                }
+                movementVector = new Vector3(0, Mathf.Sign((int)dir) * velocity, 0);
+                transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
+                moved = true;
+                break;
             }
-            else if (movementVector.y != 0 && InputController.moveValueX != 0 && (canTurnLeft || canTurnRight))
+            else if (movementVector.y <= 0 && dir == Directions.Down && canTurnDown && !moved)
             {
-                if ((InputController.moveValueX > 0 && canTurnRight) || (InputController.moveValueX < 0 && canTurnLeft))
-                {
-                    movementVector = new Vector3(InputController.moveValueX * velocity, 0, 0);
-                    transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), transform.position.z);
-                }
+                movementVector = new Vector3(0, Mathf.Sign((int)dir) * velocity, 0);
+                transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
+                moved = true;
+                break;
+            }
+            else if (movementVector.x >= 0 && dir == Directions.Right && canTurnRight && !moved)
+            {
+                movementVector = new Vector3(Mathf.Sign((int)dir) * velocity, 0, 0);
+                transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), transform.position.z);
+                moved = true;
+                break;
+            }
+            else if (movementVector.x <= 0 && dir == Directions.Left && canTurnLeft && !moved)
+            {
+                movementVector = new Vector3(Mathf.Sign((int)dir) * velocity, 0, 0);
+                transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), transform.position.z);
+                moved = true;
+                break;
             }
         }
     }
@@ -111,6 +121,7 @@ public partial class Player : MonoBehaviour {
             canTurnUp = false;
             canTurnLeft = false;
             canTurnRight = false;
+            moved = false;
         }
     }
 
