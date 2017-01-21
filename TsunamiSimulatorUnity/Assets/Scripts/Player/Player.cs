@@ -43,6 +43,7 @@ public partial class Player : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         health -= healthDegeneration * Time.fixedDeltaTime;
+        if (health <= 0) Die();
         Input();
         Move();
 	}
@@ -125,6 +126,7 @@ public partial class Player : MonoBehaviour {
             Environment env = collision.gameObject.GetComponent<Environment>();
             ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
+            if (damage >= maxDamage) lives++;
             //Destroy(collision.gameObject);
             collision.transform.Rotate(new Vector3(0,0,-90));
         }
