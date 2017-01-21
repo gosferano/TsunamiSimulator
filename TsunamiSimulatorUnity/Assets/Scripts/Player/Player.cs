@@ -12,6 +12,8 @@ public partial class Player : MonoBehaviour {
     public bool canTurnRight;
     public bool moved;
 
+    private LevelManager levelManager;
+    public int lives;
     public float health;
     public float damage;
 
@@ -28,17 +30,20 @@ public partial class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
+	    lives = 3;
         movementVector = new Vector3(velocity, 0, 0);
         directions.Add(Directions.Up);
         directions.Add(Directions.Down);
         directions.Add(Directions.Left);
         directions.Add(Directions.Right);
         gameObject.tag = "Street";
+	    levelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         health -= healthDegeneration * Time.fixedDeltaTime;
+        if (health <= 0) Die();
         Input();
         Move();
 	}
@@ -121,6 +126,7 @@ public partial class Player : MonoBehaviour {
             Environment env = collision.gameObject.GetComponent<Environment>();
             ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
+            if (damage >= maxDamage) lives++;
             //Destroy(collision.gameObject);
             collision.transform.Rotate(new Vector3(0,0,-90));
         }
@@ -136,5 +142,11 @@ public partial class Player : MonoBehaviour {
             canTurnRight = false;
             moved = false;
         }
+    }
+
+    public void Die()
+    {
+        lives--;
+        if (lives <= 0) levelManager.Lose();
     }
 }
