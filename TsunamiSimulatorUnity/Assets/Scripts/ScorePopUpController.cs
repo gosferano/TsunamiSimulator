@@ -7,8 +7,9 @@ public class ScorePopUpController : MonoBehaviour
     public  static ScorePopUp popupText;
     private static GameObject canvas;
 
-    public static void Initialize()
+    void Start()
     {
+        popupText = Resources.Load<ScorePopUp>("ScorePopUpParent");
         canvas = GameObject.Find("Canvas");
     }
 
