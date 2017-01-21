@@ -7,10 +7,12 @@ public class HealthController : MonoBehaviour {
     public Image Bar;
     public float MaxHealth = 100f;
     public float CurrentHealth = 0f;
+    public float DischargeRate = 2f;
     
 	// Use this for initialization
 	void Start () {
         CurrentHealth = MaxHealth;
+        InvokeRepeating("DecreaseHealth", 0f, DischargeRate);
 	}
 
     public void DecreaseHealth()
