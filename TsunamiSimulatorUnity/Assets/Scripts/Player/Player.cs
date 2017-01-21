@@ -27,7 +27,7 @@ public partial class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        health = 100;
+        health = maxHealth;
         movementVector = new Vector3(velocity, 0, 0);
         directions.Add(Directions.Up);
         directions.Add(Directions.Down);
@@ -118,8 +118,9 @@ public partial class Player : MonoBehaviour {
 
         if (collision.gameObject.tag == "Environment")
         {
-            ScorePopUpController.CreateFloatingText(100.ToString(), collision.transform);
             Environment env = collision.gameObject.GetComponent<Environment>();
+            ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
+            damage += env.points;
             //Destroy(collision.gameObject);
             collision.transform.Rotate(new Vector3(0,0,-90));
         }
