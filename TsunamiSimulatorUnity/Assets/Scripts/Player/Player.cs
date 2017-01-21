@@ -12,6 +12,9 @@ public partial class Player : MonoBehaviour {
     public bool canTurnRight;
     public bool moved;
 
+    public float health;
+    public float damage;
+
     public enum Directions
     {
         Up = 1,
@@ -24,6 +27,7 @@ public partial class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        health = 100;
         movementVector = new Vector3(velocity, 0, 0);
         directions.Add(Directions.Up);
         directions.Add(Directions.Down);
@@ -34,6 +38,7 @@ public partial class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        health -= healthDegeneration * Time.fixedDeltaTime;
         Input();
         Move();
 	}

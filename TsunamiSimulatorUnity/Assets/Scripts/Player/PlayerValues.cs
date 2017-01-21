@@ -4,4 +4,5 @@ using UnityEngine;
 
 public partial class Player {
     public static float velocity = 1;
+    public static float healthDegeneration = 1;
 }
