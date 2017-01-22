@@ -142,9 +142,8 @@ public partial class Player : MonoBehaviour {
 
             if (EnvironmentObject.count <= 0)
             {
-                levelManager.Win();
+                levelManager.LoadNextLevel();
             }
-
         }
 
         else if (collision.gameObject.tag == "Pickup")
