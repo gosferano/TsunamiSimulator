@@ -24,4 +24,9 @@ public class LevelManager : MonoBehaviour {
     {
         LoadLevel("Loss");
     }
+
+    public void Win()
+    {
+        LoadLevel("Win");
+    }
 }
