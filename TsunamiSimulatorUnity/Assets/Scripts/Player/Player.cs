@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using EnvironmentObject = global::Environment;
 
 public partial class Player : MonoBehaviour {
 
@@ -124,9 +125,8 @@ public partial class Player : MonoBehaviour {
 
         else if (collision.gameObject.tag == "Environment")
         {
-            Environment env = collision.gameObject.GetComponent<Environment>();
-            Debug.Log("Environment trigger");
-            ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
+            EnvironmentObject env = collision.gameObject.GetComponent<EnvironmentObject>();
+            //ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
             if (damage >= maxDamage)
             {
@@ -134,6 +134,8 @@ public partial class Player : MonoBehaviour {
                 damage = 0;
             }
             Destroy(collision.gameObject);
+            EnvironmentObject.count--;
+            Debug.Log("Objects left: " + EnvironmentObject.count);
         }
 
         else if (collision.gameObject.tag == "Pickup")
