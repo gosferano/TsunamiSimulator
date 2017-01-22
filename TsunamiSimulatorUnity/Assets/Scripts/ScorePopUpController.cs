@@ -18,7 +18,7 @@ public class ScorePopUpController : MonoBehaviour
         ScorePopUp instance = Instantiate(popupText);
         //Vector2 screenPosition = Camera.main.WorldToScreenPoint(location.position);
 
-        instance.transform.SetParent(canvas.transform, false);
+        instance.transform.SetParent(canvas.transform, false); //canvas null
         instance.transform.position = location.position; //screenPosition;
         instance.SetText(text);
     }

@@ -126,7 +126,7 @@ public partial class Player : MonoBehaviour {
         {
             Environment env = collision.gameObject.GetComponent<Environment>();
             Debug.Log("Environment trigger");
-            ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
+            //ScorePopUpController.CreateFloatingText(env.points.ToString(), collision.transform);
             damage += env.points;
             if (damage >= maxDamage)
             {
