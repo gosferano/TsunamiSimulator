@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Environment = System.Environment;
 using EnvironmentObject = global::Environment;
 
 public partial class Player : MonoBehaviour {
@@ -134,8 +135,16 @@ public partial class Player : MonoBehaviour {
                 damage = 0;
             }
             Destroy(collision.gameObject);
+
+            // Subtract from count
             EnvironmentObject.count--;
             Debug.Log("Objects left: " + EnvironmentObject.count);
+
+            if (EnvironmentObject.count <= 0)
+            {
+                levelManager.Win();
+            }
+
         }
 
         else if (collision.gameObject.tag == "Pickup")
