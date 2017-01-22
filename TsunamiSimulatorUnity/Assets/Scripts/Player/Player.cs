@@ -144,7 +144,6 @@ public partial class Player : MonoBehaviour {
             {
                 levelManager.LoadNextLevel();
             }
-
         }
 
         else if (collision.gameObject.tag == "Pickup")

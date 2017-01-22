@@ -1,0 +1,424 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M     (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   10.18.15.4256
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.024 seconds
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projects\TsunamiSimulator\Exe\ANiceDayToTsunami_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.531262 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 22bc -> priority: 1 
+  Thread -> id: ea0 -> priority: 1 
+The referenced script on this Behaviour (Game Object 'AudioController') is missing!
+ 
+(Filename:  Line: 1754)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.644712 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1179.
+Total: 0.257776 ms (FindLiveObjects: 0.038686 ms CreateObjectMapping: 0.020922 ms MarkObjects: 0.191062 ms  DeleteObjects: 0.006710 ms)
+
+StreetUpRightDown (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (8) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDown (6) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (22) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Car_01 (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (9) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUp (7) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetRightDown (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (12) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpRight (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (27) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetRightDown (7) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (34) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (33) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (8) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (32) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRight (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (8) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (28) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (16) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRight (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Car_02 (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (6) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (16) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUp (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpRight (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (10) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (6) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRight (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (18) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRight (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetRightDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUp (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (7) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (4) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hooman (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Objects left: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (3) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftRightUpDown (2) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (7) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (6) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (9) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (10) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (1) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (13) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftUpDown (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hydrant (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetVertical (17) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDownRight (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (9) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (5) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetLeftDown (6) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetHorizontal (22) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StreetUpRightDown (9) (UnityEngine.BoxCollider2D)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
