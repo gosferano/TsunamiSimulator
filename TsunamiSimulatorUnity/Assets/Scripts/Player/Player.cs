@@ -142,7 +142,7 @@ public partial class Player : MonoBehaviour {
 
             if (EnvironmentObject.count <= 0)
             {
-                levelManager.Win();
+                levelManager.LoadNextLevel();
             }
 
         }
